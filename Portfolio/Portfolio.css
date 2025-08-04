@@ -1,0 +1,169 @@
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+}
+
+.NavBar a {
+    padding-top: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15.5px;
+}
+
+.NavBar a:hover {
+    text-decoration: overline;
+}
+
+/* Style for the Projects-container */
+.Projects-container {
+    background: #f6f7fa;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    margin: 40px auto 80px auto;
+    max-width: 700px;
+    color: #222;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    transition: box-shadow 0.2s;
+}
+
+.Projects-container h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a4a6a;
+    font-weight: 600;
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+}
+
+/* Arrange projects in a 2x2 grid */
+.Projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Projects grid layout */
+.Projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px 32px;
+    width: 100%;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.Projects-grid > div {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 18px 10px;
+    text-align: center;
+    width: 90%;
+    transition: box-shadow 0.2s;
+}
+
+/* Vertical images */
+.Projects-grid .vertical img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Horizontal images */
+.Projects-grid .horizontal img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Projects-grid p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .Projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 18px;
+    }
+    .Projects-grid > div {
+        width: 100%;
+    }
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background: #222;
+    color: #f9f9fb;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
+}
+
+.footer-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-content a {
+    color: #f9f9fb;
+    background: #333;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footer-content a:hover {
+    background: #f9f9fb;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 10px;
+    }
+    .footer-content a {
+        margin: 8px 0 0 0;
+        width: 100%;
+    }
+}
+
